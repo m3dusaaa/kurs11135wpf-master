@@ -106,12 +106,10 @@ namespace kurs11135.VM
             AddOrder = new CommandVM(() =>
             {
                 new AddOrder().Show();
-                
             });
             DelOrder = new CommandVM(async () =>
             {
                 var json1 = await Api.Post("Orders", SelectedItem.Id, "delete");
-                await che();
             });
         }
         public async Task che()
