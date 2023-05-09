@@ -13,7 +13,7 @@ namespace kurs11135.Tools
     internal static class Api
     {
         static HttpClient client = new HttpClient();
-        static string host = "https://localhost:7149/api/";
+        static string host = "https://localhost:7039/api/";
         static JsonSerializerOptions options = new JsonSerializerOptions
         {
             ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve,
